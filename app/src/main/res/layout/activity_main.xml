@@ -9,11 +9,42 @@
 
 
     <Button
+        android:id="@+id/heaven"
         android:layout_width="match_parent"
         android:layout_height="100sp"
         android:layout_margin="30sp"
         android:text="@string/enter_password_and_enter_heaven"
+        android:tag="yes"
         android:onClick="enterPasswordAndEnterHeaven"
         />
+
+    <Button
+        android:id="@+id/heaven_no_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:onClick="enterPasswordAndEnterHeaven"
+        android:tag="no"
+        android:text="Enter Heaven without check" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:onClick="checkDeviceSecure"
+        android:tag="km"
+        android:text="Check Device Secure KM" />
+
+    <Button
+        android:id="@+id/button_bm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:onClick="checkDeviceSecure"
+        android:tag="bm"
+        android:text="Check Device Secure BM" />
+
+
 
 </LinearLayout>
